@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.head-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background: var(--black); */
+    background: var(--surface);
+    padding: 80px 60px;
+}
+
+.hero-name {
+    font-size: clamp(36px, 6vw, 78px);
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: var(--dark);
+}
+
+.hero-name span {
+    color: var(--primary);
+}
+
+.typing-text {
+    font-size: clamp(20px, 3vw, 38px);
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+/* blinking cursor */
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-desc {
+    font-size: clamp(15px, 1.2vw, 20px);
+    margin-bottom: 30px;
+    color: var(--muted);
+}
+
+.head-hero-container {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    background: var(--primary);
+    color: var(--surface);
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid var(--primary);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background: var(--dark);
+    border-color: var(--dark);
+}
+
+@media (max-width: 992px) {
+
+    .hero-name {
+        font-size: 40px;
+    }
+
+    .typing-text {
+        font-size: 24px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .head-hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-name {
+        font-size: 30px;
+    }
+
+    .typing-text {
+        font-size: 20px;
+    }
+
+    .hero-desc {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 200px;
+        margin: auto;
+    }
+
+}
+
+

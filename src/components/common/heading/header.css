@@ -1,0 +1,97 @@
+.head {
+    padding: 20px 0;
+    color: var(--primary);
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 1000;
+    color: black;
+}
+
+.logo span {
+    color: black;
+}
+
+.head .icon {
+    margin-left: 10px;
+}
+
+/*_________________________header__________________*/
+
+header {
+    background-color: var(--primary);
+    margin: 0 30px;
+    position: relative;
+}
+
+header .nav {
+    display: flex !important;
+}
+
+header li {
+    margin-right: 40px;
+}
+
+header ul {
+    padding: 30px 20px;
+}
+
+header ul li a {
+    color: var(--surface);
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header ul li a:hover {
+    color: var(--black);
+}
+
+
+.toggle {
+    display: none;
+}
+
+.icon_color {
+    color: var(--black);
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .start {
+        clip-path: none;
+    }
+
+    header {
+        margin: 0;
+        background-color: var(--primary);
+        position: relative;
+    }
+
+    header ul.flexSB {
+        display: none;
+    }
+
+    header ul li {
+        margin-bottom: 20px;
+    }
+
+    .toggle {
+        display: block;
+        background: none;
+        color: var(--surface);
+        font-size: 30px;
+        position: absolute;
+        right: 50px;
+        top: -20px;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary);
+    }
+}

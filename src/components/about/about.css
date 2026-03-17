@@ -1,0 +1,157 @@
+.aboutHome {
+  height: auto;
+}
+
+.aboutHome #heading {
+  text-align: left;
+  padding: 0;
+}
+
+.aboutHome .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutHome .right {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutHome .items {
+  margin-top: 50px;
+}
+
+.aboutHome .item {
+  background-color: var(--primary);
+  color: var(--surface);
+  margin-top: 30px;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.aboutHome .img {
+  width: 200px;
+}
+
+.aboutHome img {
+  width: 50px;
+  height: 50px;
+}
+
+.aboutHome .item h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.aboutHome .item:hover {
+  background-color: var(--primary);
+  color: var(--surface);
+  cursor: pointer;
+  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 35%);
+}
+
+/* about Desc */
+/* Section Background */
+.about {
+  padding: 70px 20px;
+  background-color: var(--soft);
+}
+
+/* Container */
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Title */
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--primary);
+}
+
+/* Description */
+.about-description {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 850px;
+  margin: 0 auto 20px auto;
+}
+
+/* Boxes container */
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* Individual box */
+.about-box {
+  background: var(--surface);
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Hover effect */
+.about-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Box heading */
+.about-box h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+/* Box text */
+.about-box p {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.about-list li {
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 15px;
+  }
+
+  .about-box {
+    width: 100%;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+

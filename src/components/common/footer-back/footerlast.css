@@ -1,0 +1,11 @@
+.footerlast {
+    background: var(--black);
+}
+
+#footer_last_para {
+    color: var(--surface);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+
+}
