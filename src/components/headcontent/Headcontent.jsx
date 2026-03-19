@@ -53,7 +53,7 @@ const Headcontent = () => {
                         View Experience
                     </Link>
 
-                    <a href="#" download className="btn-secondary">
+                    <a href="" download className="btn-secondary">
                         Download Resume
                     </a>
 
